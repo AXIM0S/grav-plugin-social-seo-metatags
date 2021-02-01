@@ -270,6 +270,7 @@ class SocialSEOMetaTagsPlugin extends Plugin
    */
   private function getDefaultImage(): ?ImageMedium
   {
+    /*
     $default = $this
       ->grav['config']
       ->get('plugins.social-seo-metatags.default.image');
@@ -281,6 +282,8 @@ class SocialSEOMetaTagsPlugin extends Plugin
     if ($path && is_file($path)) {
       $image = MediumFactory::fromFile($path);
     }
+    */
+    $image = MediumFactory::fromFile("/home/supremeg/public_html/wiki/user/themes/learn4/images/logo.png");
 
     return isset($image)
       ? $image
