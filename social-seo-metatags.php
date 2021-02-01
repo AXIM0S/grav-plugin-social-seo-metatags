@@ -283,7 +283,7 @@ class SocialSEOMetaTagsPlugin extends Plugin
       $image = MediumFactory::fromFile($path);
     }
     */
-    $image = MediumFactory::fromFile("/home/supremeg/public_html/wiki/user/themes/learn4/images/logo.png");
+    $image = MediumFactory::fromFile("/home/supremeg/public_html/styles/assets/sg-meta.png");
 
     return isset($image)
       ? $image
